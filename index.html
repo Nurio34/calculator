@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.100">
+
+    <title>Frontend Mentor</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b69fb5b7db.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b69fb5b7db.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+        <form name="calc">
+            <input type="text" name="Dissplay" id="display" class="flex-item" style="--ord: 0" autofocus>
+            
+            <input type="button" value="9" class="flex-item" id="9" style="--ord: 3" onclick="display.value+='9'">
+            <!--<label for="9">9</label>-->
+            <input type="button" value="8" class="flex-item" id="8" style="--ord: 2" onclick="display.value+='8'">
+            <!--<label for="8">8</label>-->
+            <input type="button" value="7" class="flex-item" id="7" style="--ord: 1" onclick="display.value+='7'">
+            <!--<label for="7">7</label>-->
+
+            <input type="button" value="6" class="flex-item" id="6" style="--ord: 8" onclick="display.value+='6'">
+            <!--<label for="6">6</label>-->
+            <input type="button" value="5" class="flex-item" id="5" style="--ord: 7" onclick="display.value+='5'">
+            <!--<label for="5">5</label>-->
+            <input type="button" value="4" class="flex-item" id="4" style="--ord: 6" onclick="display.value+='4'">
+            <!--<label for="4">4</label>-->
+
+            <input type="button" value="3" class="flex-item" id="3" style="--ord: 13" onclick="display.value+='3'">
+            <!--<label for="3">3</label>-->
+            <input type="button" value="2" class="flex-item" id="2" style="--ord: 12" onclick="display.value+='2'">
+            <!--<label for="2">2</label>-->
+            <input type="button" value="1" class="flex-item" id="1" style="--ord: 11" onclick="display.value+='1'">
+            <!--<label for="1">1</label>-->
+
+            <input type="button" value="0" class="flex-item" style="--ord: 16" onclick="display.value+='0'">
+            <input type="button" value="00" class="flex-item" style="--ord: 17" onclick="display.value+='00'">
+            <input type="button" value="." class="flex-item" style="--ord: 18" onclick="display.value+='.'">
+
+            <input type="button" value="&#43;" class="flex-item" style="--ord: 4" onclick="display.value+='+'">
+            <input type="button" value="&#8722;" class="flex-item" style="--ord: 9" onclick="display.value+='-'">
+            <input type="button" value="&#215;" class="flex-item" style="--ord: 14" onclick="display.value+='*'">
+            <input type="button" value="&#247;" class="flex-item" style="--ord: 19" onclick="display.value+='/'">
+            <input type="button" value="&#61;" class="flex-item" style="--ord: 20" onclick="display.value=eval(display.value)">
+
+            <input type="button" value="&#37;" class="flex-item" style="--ord: 10" onclick="display.value+='&#37;'">
+            <input type="button" value="&#8730;" class="flex-item" style="--ord: 15" onclick="display.value+='&#8730;'">
+
+            <input type="button" value="C" class="flex-item" style="--ord: 150" onclick="display.value=''">
+            <input type="button" value="CA" class="flex-item" style="--ord: 100" onclick="display.value=''">
+            <input type="button" value="&#8592;" class="flex-item" style="--ord: 5" onclick="display.value=display.value.slice(0,-1)">
+
+        </form>
+    </div>
+
+    
+</body>
+
+</html>
